@@ -1,0 +1,23 @@
+{
+  "$shema": "http://json-schema.org/schema",
+  "$id": "SbShematics",
+  "title": "Storybook Options Schema",
+  "type": "object",
+  "description": "Creates stories file for component",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the component",
+      "$detail": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "What path to the future stories file?",
+      "project": {
+        "type": "string",
+        "description": "Generate in specific Angular CLI workspace project"
+      }
+    }
+  },
+  "required": ["name"]
+}
